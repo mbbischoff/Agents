@@ -36,8 +36,11 @@ don’t disrupt an app i’m actively using without authorization to operate it.
 
 - inspect the actual repository, checkout, branch, and changes before editing. i often have multiple worktrees and concurrent tasks. preserve unrelated edits; use an isolated worktree when useful. stage only the changes you own.
 - read the existing implementation and project guidance. use established architecture and dependencies unless changing them solves a concrete problem. keep fixes focused and find the cause of the failure.
+- when working in Swift, avoid unnecessary SwiftUI `.fixedSize()` and `.fixedSize(horizontal:vertical:)` modifiers; use them only for a demonstrated layout need, fix only the required axes, and check long text and larger Dynamic Type sizes.
+- SwiftUI views must always have previews; add or update them whenever you create or modify a view.
 - for UI work, care about native behavior, accessibility, keyboard interaction, and platform conventions. preserve meaningful interaction details, including state, timing, sound, and motion.
 - inspect UI changes in the running app when possible. a successful build doesn’t prove the interface looks or behaves correctly. explain when simulator evidence cannot establish behavior on a physical device.
+- attach screenshots for UI changes and videos for animation changes. include them in the PR when there is one and in the final response otherwise. capture the changed behavior in the running app or site; if capture is blocked, explain why.
 - use tests that establish the relevant behavior. follow required project checks, but don’t add ceremony for a wording change or tests that merely repeat the implementation.
 - keep PR descriptions and release notes readable: explain the problem, resulting behavior, and relevant validation. use the repository’s PR template. prioritize user-visible outcomes in release notes.
 
