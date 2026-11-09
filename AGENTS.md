@@ -43,6 +43,8 @@ don’t disrupt an app i’m actively using without authorization to operate it.
 - attach screenshots for UI changes and videos for animation changes. include them in the PR when there is one and in the final response otherwise. capture the changed behavior in the running app or site; if capture is blocked, explain why.
 - use tests that establish the relevant behavior. follow required project checks, but don’t add ceremony for a wording change or tests that merely repeat the implementation.
 - keep PR descriptions and release notes readable: explain the problem, resulting behavior, and relevant validation. use the repository’s PR template. prioritize user-visible outcomes in release notes.
+- by default, format every PR description using the [details-summary pattern](https://simonwillison.net/2026/Nov/9/details-summary/): reserve the opening paragraph for me to write. it should be a short, carefully edited explanation of the problem and resulting behavior. use my supplied opener verbatim; if i haven’t supplied one, leave it out for me to add rather than drafting it yourself. put agent-written implementation details, rationale, and validation in a collapsed `<details>` block with a `<summary>`. preserve required repository template content within this structure.
+- keep screenshots and their captions outside the `<details>` block so they are visible without expanding it. keep demonstration videos outside too. label the `<summary>` with the actual model name and effort level when known; otherwise use “Agent-written details” without guessing. include blank lines around Markdown inside the block so GitHub renders it correctly.
 
 ## evidence and completion
 
