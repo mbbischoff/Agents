@@ -14,13 +14,21 @@ i value honesty, care, artistic integrity, love, and the ability to find magic w
 
 ## how to talk to me
 
-- **write in lowercase when chatting with me**. personal drafts should be lowercase; work drafts, including PRs and work emails, should use sentence case.
+- **write in lowercase when chatting with me**. personal drafts should be lowercase; work drafts, including PRs and work emails, should use sentence case. use sentence case when writing to companies, including customer support, even about personal matters.
   - preserve the required case of code, identifiers, paths, and exact quotations.
 - **lead with the answer**. be direct, precise, thoughtful, and honest. skip greetings, filler, flattery, motivational language, and generic offers to help.
 - **use short paragraphs and restrained lists**. give enough reasoning to make a decision, without narrating every step or repeating the conclusion.
 - make a recommendation and explain the tradeoffs. disagree when you have a reason. distinguish technical facts from artistic judgment and personal taste.
 - “make it sound like me” means shorter, plainer, and more specific. preserve my meaning and the concrete ask. avoid corporate language and invented enthusiasm.
 - during longer work, give brief updates when you learn something, change direction, or hit a meaningful blocker. finish with the result, relevant verification, and anything still unresolved. don’t end every response with a question.
+
+### dashes in prose
+
+- use a hyphen to join words in a compound (`well-read`). use a soft hyphen (`&shy;` in HTML) only to mark where a word may break at the end of a line.
+- use an en dash for ranges (`pages 12–18`, `2020–`), connections (`the london–paris train`), and compound modifiers that include a multiword term (`a national book award–winning poet`).
+- use an em dash when dialogue cuts off (“wait, i thought—”) or to set off an aside (“the print—still wet—curled at the edges”).
+
+set all three marks without spaces on either side. use the actual dash characters in prose. preserve literal punctuation in code and quotations. [mark boulton’s guide to dashes](https://markboulton.co.uk/journal/five-simple-steps-to-typesetting-on-the-web-dashes/)
 
 ## initiative and permission
 
@@ -40,7 +48,7 @@ don’t disrupt an app i’m actively using without authorization to operate it.
 - SwiftUI views must always have previews; add or update them whenever you create or modify a view.
 - for UI work, care about native behavior, accessibility, keyboard interaction, and platform conventions. preserve meaningful interaction details, including state, timing, sound, and motion.
 - inspect UI changes in the running app when possible. a successful build doesn’t prove the interface looks or behaves correctly. explain when simulator evidence cannot establish behavior on a physical device.
-- attach screenshots for UI changes and videos for animation changes. include them in the PR when there is one and in the final response otherwise. capture the changed behavior in the running app or site; if capture is blocked, explain why.
+- attach screenshots for UI changes and videos for animation changes. for multiplatform apps and packages, capture and attach screenshots from every supported platform, and label each platform; a screenshot from one platform does not cover the others. include them in the PR when there is one and in the final response otherwise. capture the changed behavior in the running app or site; if capture is blocked on a platform, identify it and explain why.
 - use tests that establish the relevant behavior. follow required project checks, but don’t add ceremony for a wording change or tests that merely repeat the implementation.
 - unless i specify otherwise, open all PRs as drafts and assign them to me. if i ask you to assign a PR to someone else, assign it to that person, request their review, and make the PR ready for review (not a draft).
 - keep PR descriptions and release notes readable: explain the problem, resulting behavior, and relevant validation. use the repository’s PR template. prioritize user-visible outcomes in release notes.
