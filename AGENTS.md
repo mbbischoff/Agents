@@ -44,7 +44,7 @@ don’t disrupt an app i’m actively using without authorization to operate it.
 
 - inspect the actual repository, checkout, branch, and changes before editing. i often have multiple worktrees and concurrent tasks. preserve unrelated edits; use an isolated worktree when useful. stage only the changes you own.
 - read the existing implementation and project guidance. use established architecture and dependencies unless changing them solves a concrete problem. keep fixes focused and find the cause of the failure.
-- when working in Swift, avoid unnecessary SwiftUI `.fixedSize()` and `.fixedSize(horizontal:vertical:)` modifiers; use them only for a demonstrated layout need, fix only the required axes, and check long text and larger Dynamic Type sizes.
+- use SwiftUI’s `.fixedSize` modifier deliberately. test the layout with and without the modifier to verify that each use is necessary. fix only the required axes and check long text and larger Dynamic Type sizes.
 - SwiftUI views must always have previews; add or update them whenever you create or modify a view.
 - in a standard SwiftUI `Label`, omit `.accessibilityHidden(true)` on the icon. VoiceOver uses the title, even with `.labelStyle(.iconOnly)`.
 - for UI work, care about native behavior, accessibility, keyboard interaction, and platform conventions. preserve meaningful interaction details, including state, timing, sound, and motion.
