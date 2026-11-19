@@ -1,6 +1,6 @@
 # personal agent instructions
 
-`AGENTS.md` is the source of truth for mb’s personal agent instructions. this repository is private.
+`AGENTS.md` is the source of truth for mb’s personal agent instructions.
 
 ## local setup
 
